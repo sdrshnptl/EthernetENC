@@ -51,7 +51,7 @@ void Enc28J60Network::initSPI()
     return;
   pinMode(csPin, OUTPUT);
   CSPASSIVE;
-  SPI.begin();
+  SPI.begin(14,12,13,15);
   spiInitialized = true;
 }
 

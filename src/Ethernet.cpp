@@ -54,8 +54,7 @@ void UIPEthernetClass::init(uint8_t csPin)
 }
 
 #if UIP_UDP
-int
-UIPEthernetClass::begin(const uint8_t* mac, unsigned long timeout, unsigned long responseTimeout)
+int UIPEthernetClass::begin(const uint8_t* mac, unsigned long timeout, unsigned long responseTimeout)
 {
   static DhcpClass s_dhcp;
   _dhcp = &s_dhcp;
